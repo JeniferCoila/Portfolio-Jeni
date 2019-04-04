@@ -1118,7 +1118,7 @@ nav {
   position: fixed;
   height: 70px;
   width: 70px;
-  overflow: hidden;/
+  overflow: hidden;
   background-image: url(/src/img/cross.png);
   background-repeat: no-repeat;
   z-index: 1000;
