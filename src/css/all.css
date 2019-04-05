@@ -468,11 +468,11 @@ footer {
   letter-spacing: 0.075em;
 }
 header {
-/*   background-image: url(/src/img/tanner-van-dera-741079-unsplash.jpg);
+/*   background-image: url(../img/tanner-van-dera-741079-unsplash.jpg);
  */  background: linear-gradient(
     #8596A5, 
     #8596A5),
-  url(/src/img/tanner-van-dera-741079-unsplash.jpg);
+  url(../img/tanner-van-dera-741079-unsplash.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -647,7 +647,7 @@ nav {
   height: 70px;
   width: 70px;
   overflow: hidden;
-  background-image: url(/src/img/cross.png);
+  background-image: url(../img/cross.png);
   background-repeat: no-repeat;
   z-index: 1000;
   cursor: pointer;
@@ -662,8 +662,8 @@ nav {
   height: 200px;
   width: 200px;
   margin-top: 2em;
-  background: url("/src/img/Jenifer Coila.png") center center no-repeat;
-  background: url("/src/img/Jenifer Coila.png") center center no-repeat;
+  background: url("../img/Jenifer Coila.png") center center no-repeat;
+  background: url("../img/Jenifer Coila.png") center center no-repeat;
 }
 
 .about-para {
@@ -940,11 +940,11 @@ img:hover {
 
 /* Change background image here! */
 header {
-/* background-image: url(/src/img/tanner-van-dera-741079-unsplash.jpg);
+/* background-image: url(../img/tanner-van-dera-741079-unsplash.jpg);
  */ background: linear-gradient(
   rgba(207, 216, 188, 0.45), 
     #5C738C),
-  url(/src/img/tanner-van-dera-741079-unsplash.jpg); 
+  url(../img/tanner-van-dera-741079-unsplash.jpg); 
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -1119,7 +1119,7 @@ nav {
   height: 70px;
   width: 70px;
   overflow: hidden;
-  background-image: url(/src/img/cross.png);
+  background-image: url(../img/cross.png);
   background-repeat: no-repeat;
   z-index: 1000;
   cursor: pointer;
