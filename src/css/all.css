@@ -55,7 +55,7 @@ template {
   display: none;
 }
 
-a {
+.anchor {
   background-color: transparent;
 }
 
@@ -107,7 +107,7 @@ sub {
   bottom: -0.25em;
 }
 
-img {
+.project-img {
   border: 0;
 }
 
@@ -250,11 +250,15 @@ body {
   overflow-x: hidden;
 }
 
-a {
+.anchor {
   font-size: 1em;
   line-height: 1.15;
   color: #fff;
   text-decoration: none;
+}
+
+.nav-text{
+  text-shadow: #7a7f82 3px 3px 3px;
 }
 
 ul {
@@ -265,7 +269,9 @@ ul {
 li {
   list-style-type: none;
   text-decoration: none;
+
 }
+
 
 h1, h2.h3, h4, h5, h6 {
   color: #7A7F82;
@@ -301,11 +307,19 @@ h4 {
   width: 130px;
   height: 30px;
   font-weight: 600;
+  background-color: #cdcec0;
+
+}
+
+.code-button:hover {
+  background-color: #fff;
+  color: #7a7f82;
 }
 
 .img1{
   display:flex;
 }
+
 
 .button-container{
   display: flex;
@@ -318,7 +332,6 @@ margin: 10px 10px 10px 40px;
   text-align: center;
   padding:0px;
    font-weight: 300;
-  
 }
 .project-overview{
 }
@@ -352,9 +365,9 @@ hr {
   height: 0;
 }
 
-a:hover, a:focus {
+ .anchor:hover, .anchor:focus {
   color: rgba(255, 255, 255, 0.7);
-}
+} 
 
 ::-moz-selection {
   background: rgba(255, 255, 255, 0.9);
@@ -389,6 +402,39 @@ body {
 footer {
   background-color: #7a7f82;
 }
+.logo-footer{
+height: 60px;
+margin: 20px;
+}
+
+.img-tools{
+  width: 100px;
+  }
+
+.container-skills{
+ margin: 60px;
+  }
+
+.logo-skills{
+margin: 0px 30px;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+
+
+.node {
+   padding: 20px 0px ;
+  }
+
+  .logo-tools{
+    flex-direction: column;
+    margin: 20px;
+    align-items: center;
+    display: flex;
+
+  }
 
 .container {
   height: 100%;
@@ -468,11 +514,11 @@ footer {
   letter-spacing: 0.075em;
 }
 header {
-/*   background-image: url(../img/tanner-van-dera-741079-unsplash.jpg);
+/*   background-image: url(../img/tanner-van-dera-741079-unsplash-1594px.jpg);
  */  background: linear-gradient(
     #8596A5, 
     #8596A5),
-  url(../img/tanner-van-dera-741079-unsplash.jpg);
+  url(../img/tanner-van-dera-741079-unsplash-1594px.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -673,6 +719,14 @@ nav {
   padding: 1em 3em;
 }
 
+.container-tools{
+  margin: 60px 20% ;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
 .flex {
   display: -webkit-box;
   display: -webkit-flex;
@@ -682,6 +736,25 @@ nav {
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
 }
+
+.contact{
+  padding: 10px;
+}
+
+.contact-info{
+  width: ;
+  text-decoration: none;
+  font-size: 1.5em;
+  justify-content: center;
+
+}
+
+.contact-container{
+display: flex;
+align-items: center;
+flex-direction: column;
+}
+
 
 @media (min-width: 12.5em) {
   .flex {
@@ -743,22 +816,22 @@ nav {
 }
 
 @media (min-width: 12.5em) {
-  img {
+  .project-img {
     width: 100%;
   }
 }
 
 @media (min-width: 63em) {
-  img {
+  .project-img {
     height: 300px;
     width: 300px;
   }
 }
 
-img:hover {
+/* img:hover {
   -webkit-filter: grayscale(100%);
           filter: grayscale(100%);
-}
+} */
 
 .overlay {
   width: 300px;
@@ -836,7 +909,7 @@ img:hover {
 }
 
 .social-media {
-  margin-top: 2em;
+  margin-top: 1em;
 }
 
 @media (min-width: 12.5em) {
@@ -938,13 +1011,21 @@ img:hover {
   letter-spacing: 0.075em;
 }
 
+.logo-container{
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+}
+
 /* Change background image here! */
 header {
-/* background-image: url(../img/tanner-van-dera-741079-unsplash.jpg);
+/* background-image: url(../img/tanner-van-dera-741079-unsplash-1594px.jpg);
  */ background: linear-gradient(
-  rgba(207, 216, 188, 0.45), 
+  rgba(207, 216, 188, 0.2), 
     #5C738C),
-  url(../img/tanner-van-dera-741079-unsplash.jpg); 
+  url(../img/tanner-van-dera-741079-unsplash-1594px.jpg); 
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -973,6 +1054,8 @@ nav {
     display: none;
     font-weight: 600;
     letter-spacing: 0.075em;
+    color: #7a7f82;
+
   }
 }
 
@@ -980,6 +1063,8 @@ nav {
   ul.in {
     display: inline-block;
     font-size: 1em;
+    color: #7a7f82;
+
   }
 }
 
@@ -1133,4 +1218,7 @@ nav {
 
 footer {
   background-color: #7a7f82;
+}
+
+.copyright{
 }

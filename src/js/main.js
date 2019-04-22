@@ -23,6 +23,15 @@ $(document).ready(function() {
   });
 });
 
+
+$(document).ready(function() {
+  $('.skills').click(function() {
+    $('html, body').animate({
+      scrollTop: $('.img-skills').offset().top
+    }, 1200);
+  });
+});
+
 //Portfolio Link going to flexbox portfolio section
 $(document).ready(function() {
   $('.work').click(function() {
@@ -31,6 +40,18 @@ $(document).ready(function() {
     }, 1200);
   });
 });
+
+//Portfolio Link going to image of tools portfolio section
+
+$(document).ready(function() {
+  $('.tools').click(function() {
+    $('html, body').animate({
+      scrollTop: $('.container-tools').offset().top
+    }, 1200);
+  });
+});
+
+
 
 // Contact link going to contact section
 $(document).ready(function() {
