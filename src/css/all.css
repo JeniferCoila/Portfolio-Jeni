@@ -866,7 +866,7 @@ flex-direction: column;
 }
 
 .contact-button {
-  border: 2px white solid;
+  border: 2px #7a7f82;
   border-radius: 10px;
   display: block;
   margin: 0 auto;
@@ -874,6 +874,7 @@ flex-direction: column;
   white-space: nowrap;
   font-weight: 600;
 }
+
 
 @media (min-width: 12.5em) {
   .contact-button {
@@ -904,8 +905,8 @@ flex-direction: column;
 }
 
 .contact-button:hover {
-  background-color: #fff;
-  color: #7a7f82;
+  background-color: #7a7f82;
+  color: #fff;
 }
 
 .social-media {
