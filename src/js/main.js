@@ -139,7 +139,6 @@ $(document).ready(function() {
   $(window).resize(function() {
  if ($(window).width() < 960) {
     $('#img1, #img2, #img3, #img4').css('display', 'none')
-    $("#project-content").addClass('d-flex', 'flex-column')
     $( ".btn-one" ).detach().appendTo(".one");
     $( ".btn-two" ).detach().appendTo(".two");
     $( ".btn-three" ).detach().appendTo(".three");
