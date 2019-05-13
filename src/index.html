@@ -46,29 +46,28 @@
 <body>
   <header>
     <div class="overlay-nav hidden">
-<!--       <ul class="mobile">
-        <li><a href="/" class="about anchor">HOME</a></li>
-      </ul> -->
       <ul class="mobile">
-        <li><a href="#about" class="about anchor">CONÓCEME</a></li>
+        <li><a href="#about" class="about anchor section-port">CONÓCEME</a></li>
       </ul>
       <ul class="mobile">
-          <li><a href="#skills" class="skills anchor">MIS HABILIDADES</a></li>
+          <li><a href="#skills" class="skills anchor section-port">MIS HABILIDADES</a></li>
         </ul>
       <ul class="mobile">
-        <li><a href="#projects" class="work anchor">MIS PROYECTOS</a></li>
+        <li><a href="#projects" class="work anchor section-port">MIS PROYECTOS</a></li>
       </ul>
       <ul class="mobile">
-          <li><a href="#tools" class="tools anchor">MIS HERRAMIENTAS</a></li>
+          <li><a href="#tools" class="tools anchor section-port">MIS HERRAMIENTAS</a></li>
         </ul>
       <ul class="mobile">
-        <li><a href="#contact" class="contact-nav anchor">CONTÁCTAME</a></li>
+        <li><a href="#contact" class="contact-nav anchor section-port">CONTÁCTAME</a></li>
       </ul>
+      
       <div class="close"></div>
     </div>
+
     <div class="container">
       <div id="logo"> &ltJENI&gt </div>
-      <nav><a id="toggle" href="#"><i class="fa fa-bars fa-2x"></i></a>
+      <nav><a id="toggle" class = "anchor" href="#"><i class="fa fa-bars fa-2x"></i></a>
 <!--         <ul class="in">
           <li><a href="./" class="nav-text anchor">HOME</a></li>
         </ul> -->
@@ -99,7 +98,7 @@
       <div class="self-pic"></div>
       <!-- Change paragraph text here, add subheadings by using h2 or h3 tags -->
       <p class="about-para"> Soy Front-End developer con estudios en Microbiología y Parasitología. Me apasiona generar soluciones web que 
-        brinden la mejor experiencia al usuario, usando Javascript, por ejemplo, como poderosa herramienta. Considero los retos digitales, tanto individuales como en equipo, como oportunidades de mejora profesional y personal. 
+        brinden la mejor experiencia al usuario usando poderosas herramientas como Javascript. Considero los retos digitales, tanto individuales como en equipo, como oportunidades de mejora profesional y personal. 
         Mi formación científica me permite contar con un punto de vista analítico. Y en mi tiempo libre disfruto de expresiones culturales y del aprendizaje de idiomas extranjeros.
       </p>
       <a href="http://bit.ly/Jcoila-CV" class="contact-button grey anchor" target="_blank">Mira mi CV</a>
@@ -107,7 +106,7 @@
   </section>
   <section>
     <div class="container skills">
-      <h1 class="port">Habilidades</h1>
+      <h1 class="port">Mis habilidades</h1>
       <div class="img-skills">
           <div class="container-skills flex">
               <a class="logo-skills ">
@@ -129,18 +128,24 @@
   </section>
   <section>
     <!-- edit the H2 text if you need to-->
-    <h1 class="port">Mis Proyectos</h1>
-    <div class="container">
-      <div class="flex">
+    <h1 class="port">Mis proyectos</h1>
+
+    <div class="container flex project-area">
+
+  
         <!-- change the links of the images and project title here!-->
         <div class="project-overview">
+
           <h3 class="project-title"> Markdown Links </h3>
-          <div class="img-description">
+
+          <div class="img-description one">
             <figure id="two">
               <div id="img2" class="overlay">
-                <div class="button-container">
+              <section class="ov-one">
+                <div class="button-container btn-one">
                   <a class="code-button button" href="https://github.com/JeniferCoila/LIM008-fe-md-links" target="_blank"> Código </a>
                 </div>
+              </section>
               </div>
               <img class="project-img" src="./img/leagueoflegendschmp3.png" alt="" >
               </a>
@@ -149,59 +154,66 @@
               Esta librería instalable en tu computador te permitirá obtener los links de los archivos Markdown que
               desees, además de indicarte si
               son válidos. <br>
-              Herramientas utilizadas : NodeJS, Javascript, Jest.
+              <strong>Herramientas utilizadas:</strong> NodeJS, Javascript, Jest.
             </h4>
           </div>
+
         </div>
+
         <div class="project-overview">
           <h3 class="project-title"> JoinClude </h3>
-          <div class="img-description">
+          <div class="img-description two">
             <figure id="three">
               <div id="img3" class="overlay">
-                <div class="button-container">
+                  <section class="ov-two">
+                <div class="button-container btn-two">
+
                   <a class="code-button button" href="https://github.com/JeniferCoila/LIM008-social-network" target="_blank"> Código
                   </a>
                   <a class="code-button button"> Demo </a>
                 </div>
+                </section>
+
               </div>
               <img class="project-img" src="./img/Joinclude-cap.png" alt="">
               </a>
             </figure>
             <h4 class="project-description">Red social para personas feministas que nace con la necesidad de un espacio
               libre para compartir historias e ideas y disfrutar de una comunidad libre. <br>
-              Herramientas utilizadas : Javascript, HTML5, CSS, Firebase, Jest.
+              <strong>Herramientas utilizadas:</strong>Javascript, HTML5, CSS, Firebase, Jest.
             </h4>
           </div>
         </div>
         <div class="project-overview">
           <h3 class="project-title"> League of Legends Championship </h3>
-          <div class="img-description">
+          <div class="img-description three">
             <figure id="four">
               <div id="img4" class="overlay">
-                <div class="button-container">
+                  <section class=" ov-three">
+                <div class="button-container btn-three">
                   <a class="code-button" href="https://github.com/JeniferCoila/lim-2018-11-bc-core-am-data-lovers" target="_blank">
                     Código </a>
                   <a class="code-button" href="https://jenifercoila.github.io/lim-2018-11-bc-core-am-data-lovers/src" target="_blank">
                     Demo </a>
                 </div>
+                <section>
               </div>
               <img class="project-img" src="./img/leagueoflegendschmp3.png" alt="">
               </a>
             </figure>
             <h4 class="project-description"> Aplicación dirigida a jugadores novatos de League of Legends que muestra los campeones
-               del juego mencionado y sus habilidades, además de estadisticas útiles para poder elegir al campeón perfecto y tener una buena partida.<br>
-              Herramientas utilizadas : Javascript, HTML5, CSS, Jest.
+               del juego y sus habilidades, además de estadisticas útiles para elegir al campeón perfecto y tener una buena partida.<br>
+               <strong>Herramientas utilizadas:</strong> Javascript, HTML5, CSS, Jest.
             </h4>
           </div>
         </div>
 
-      </div>
     </div>
   </section>
 
   <section>
     <div class="container tools">
-      <h1 class="port">Herramientas</h1>
+      <h1 class="port">Mis herramientas</h1>
       <div class="container-tools flex">
         <a class="logo-tools">
           <img class="img-tools" src="./img/angular.png"> <br> Angular 7
@@ -234,7 +246,7 @@
   <section class="grey">
     <div class="contact-container">
       <!-- edit this h2 and paragraph text here!-->
-      <h2 class="contact">¡Contactémonos!</h2>
+      <h2 class="contact">¡Contáctame!</h2>
       <div class="logo-container">
         <a class="contact-info flex contact" href="tel:+51931699973">
           <img class="logo-footer" src="./img/smartphone-call (1).png"> +51 931 699 973

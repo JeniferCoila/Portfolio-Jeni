@@ -308,7 +308,7 @@ h4 {
   height: 30px;
   font-weight: 600;
   background-color: #cdcec0;
-
+  text-decoration: none; 
 }
 
 .code-button:hover {
