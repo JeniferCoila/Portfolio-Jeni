@@ -135,8 +135,8 @@ $(document).ready(function() {
 // End figcaption animations
 
 // figcaption doesn't show up under 960px. Should get better performance on mobile.
-$(document).ready(function() {
-  $(document).resize(function() {
+$(window).ready(function() {
+  $(window).resize(function() {
  if ($(document).width() < 960) {
     $('#img1, #img2, #img3, #img4').css('display', 'none')
     $( ".btn-one" ).detach().appendTo(".one");
@@ -151,6 +151,7 @@ $(document).ready(function() {
 }
 });
 });
+
 
 
 
