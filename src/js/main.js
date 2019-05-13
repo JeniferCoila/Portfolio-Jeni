@@ -135,22 +135,41 @@ $(document).ready(function() {
 // End figcaption animations
 
 // figcaption doesn't show up under 960px. Should get better performance on mobile.
+/*
 $(window).ready(function() {
-  $(window).resize(function() {
- if ($(document).width() < 960) {
+   $(window).resize(function() {
+if ($(window).width() < 960) {
+
+ }
+ else {
+
+}
+});
+/* }); */
+
+
+$(document).ready(function() {
+  // run test on initial page load
+  checkSize();
+  // run test on resize of the window
+  $(window).resize(checkSize);
+});
+//Function to the css rule
+function checkSize(){
+  if ($(".project-area").css("background-color") == "rgb(255, 255, 255)" ){
+    console.log('if')
     $('#img1, #img2, #img3, #img4').css('display', 'none')
     $( ".btn-one" ).detach().appendTo(".one");
     $( ".btn-two" ).detach().appendTo(".two");
-    $( ".btn-three" ).detach().appendTo(".three");
- }
- else {
-   $('#img1, #img2, #img3, #img4').css('display', 'block')
-   $( ".btn-one" ).detach().appendTo(".ov-one");
-   $( ".btn-two" ).detach().appendTo(".ov-two");
-   $( ".btn-three" ).detach().appendTo(".ov-three");
+    $( ".btn-three" ).detach().appendTo(".three");  
+  } else {
+    console.log('else')
+    $('#img1, #img2, #img3, #img4').css('display', 'block')
+    $( ".btn-one" ).detach().appendTo(".ov-one");
+    $( ".btn-two" ).detach().appendTo(".ov-two");
+    $( ".btn-three" ).detach().appendTo(".ov-three");
+  }
 }
-});
-});
 
 
 
