@@ -32,14 +32,6 @@ $(document).ready(function() {
   });
 });
 
-//Portfolio Link going to flexbox portfolio section
-$(document).ready(function() {
-  $('.work').click(function() {
-    $('html, body').animate({
-      scrollTop: $('.flex').offset().top
-    }, 1200);
-  });
-});
 
 //Portfolio Link going to image of tools portfolio section
 
@@ -48,6 +40,7 @@ $(document).ready(function() {
     $('html, body').animate({
       scrollTop: $('.container-tools').offset().top
     }, 1200);
+    
   });
 });
 
@@ -66,16 +59,18 @@ $(document).ready(function() {
 $(document).ready(function() {
   $('.work').click(function() {
     $('html, body').animate({
-      scrollTop: $('.flex').offset().top
+      scrollTop: $('.project-area').offset().top
     }, 1200);
   });
 });
 
 $(document).ready(function() {
-  $('a').click(function() {
-    $('overlay-nav').fadeOut();
+  $('.section-port').click(function() {
+    $(".hidden").fadeOut("slow", 0)
+    $("#toggle").fadeIn("slow", 0)
   });
   });
+
 
 // Figure animations
 $(document).ready(function() {
@@ -144,9 +139,16 @@ $(document).ready(function() {
   $(window).resize(function() {
  if ($(window).width() < 960) {
     $('#img1, #img2, #img3, #img4').css('display', 'none')
+    $("#project-content").addClass('d-flex', 'flex-column')
+    $( ".btn-one" ).detach().appendTo(".one");
+    $( ".btn-two" ).detach().appendTo(".two");
+    $( ".btn-three" ).detach().appendTo(".three");
  }
  else {
    $('#img1, #img2, #img3, #img4').css('display', 'block')
+   $( ".btn-one" ).detach().appendTo(".ov-one");
+   $( ".btn-two" ).detach().appendTo(".ov-two");
+   $( ".btn-three" ).detach().appendTo(".ov-three");
 }
 });
 });

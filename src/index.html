@@ -24,6 +24,7 @@
   <link rel="stylesheet" href="css/all.css">
   <!-- font link here, change to another google font if you wish!-->
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,700" rel="stylesheet" type="text/css">
+  
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
   <!-- begin favicon stuff-->
   <link rel="apple-touch-icon" sizes="57x57" href="./icon/apple-touch-icon-57x57.png">
@@ -46,29 +47,28 @@
 <body>
   <header>
     <div class="overlay-nav hidden">
-<!--       <ul class="mobile">
-        <li><a href="/" class="about anchor">HOME</a></li>
-      </ul> -->
       <ul class="mobile">
-        <li><a href="#about" class="about anchor">CONÓCEME</a></li>
+        <li><a href="#about" class="about anchor section-port">CONÓCEME</a></li>
       </ul>
       <ul class="mobile">
-          <li><a href="#skills" class="skills anchor">MIS HABILIDADES</a></li>
+          <li><a href="#skills" class="skills anchor section-port">MIS HABILIDADES</a></li>
         </ul>
       <ul class="mobile">
-        <li><a href="#projects" class="work anchor">MIS PROYECTOS</a></li>
+        <li><a href="#projects" class="work anchor section-port">MIS PROYECTOS</a></li>
       </ul>
       <ul class="mobile">
-          <li><a href="#tools" class="tools anchor">MIS HERRAMIENTAS</a></li>
+          <li><a href="#tools" class="tools anchor section-port">MIS HERRAMIENTAS</a></li>
         </ul>
       <ul class="mobile">
-        <li><a href="#contact" class="contact-nav anchor">CONTÁCTAME</a></li>
+        <li><a href="#contact" class="contact-nav anchor section-port">CONTÁCTAME</a></li>
       </ul>
+      
       <div class="close"></div>
     </div>
+
     <div class="container">
       <div id="logo"> &ltJENI&gt </div>
-      <nav><a id="toggle" href="#"><i class="fa fa-bars fa-2x"></i></a>
+      <nav><a id="toggle" class = "anchor" href="#"><i class="fa fa-bars fa-2x"></i></a>
 <!--         <ul class="in">
           <li><a href="./" class="nav-text anchor">HOME</a></li>
         </ul> -->
@@ -99,7 +99,7 @@
       <div class="self-pic"></div>
       <!-- Change paragraph text here, add subheadings by using h2 or h3 tags -->
       <p class="about-para"> Soy Front-End developer con estudios en Microbiología y Parasitología. Me apasiona generar soluciones web que 
-        brinden la mejor experiencia al usuario, usando Javascript, por ejemplo, como poderosa herramienta. Considero los retos digitales, tanto individuales como en equipo, como oportunidades de mejora profesional y personal. 
+        brinden la mejor experiencia al usuario usando poderosas herramientas como Javascript. Considero los retos digitales, tanto individuales como en equipo, como oportunidades de mejora profesional y personal. 
         Mi formación científica me permite contar con un punto de vista analítico. Y en mi tiempo libre disfruto de expresiones culturales y del aprendizaje de idiomas extranjeros.
       </p>
       <a href="http://bit.ly/Jcoila-CV" class="contact-button grey anchor" target="_blank">Mira mi CV</a>
@@ -107,20 +107,20 @@
   </section>
   <section>
     <div class="container skills">
-      <h1 class="port">Habilidades</h1>
+      <h1 class="port">Mis habilidades</h1>
       <div class="img-skills">
           <div class="container-skills flex">
               <a class="logo-skills ">
-                <img class="img-tools" src="./img/selfLearningd.png"> <br> Autoaprendizaje
+                <img class="img-tools" src="./img/selfLearningd.png"> <br> <p class="skill-name">Autoaprendizaje</p>
               </a>
               <a class="logo-skills">
-                  <img class="img-tools" src="./img/perseveranced.png"> <br> Perseverancia
+                  <img class="img-tools" src="./img/perseveranced.png"> <br> <p class="skill-name">Perseverancia</p>
                 </a>
                 <a class="logo-skills">
-                    <img class="img-tools" src="./img/teamworkd.png"> <br> Trabajo en equipo
+                    <img class="img-tools" src="./img/teamworkd.png"> <br> <p class="skill-name">Trabajo en equipo</p>
                   </a>
                 <a class="logo-skills">
-                    <img class="img-tools" src="./img/comunicationd.png"><br>  Comunicación asertiva
+                    <img class="img-tools" src="./img/comunicationd.png"><br>  <p class="skill-name">Comunicación asertiva</p>
                   </a>
             </div>
       </div>
@@ -129,16 +129,20 @@
   </section>
   <section>
     <!-- edit the H2 text if you need to-->
-    <h1 class="port">Mis Proyectos</h1>
-    <div class="container">
-      <div class="flex">
+    <h1 class="port">Mis proyectos</h1>
+
+    <div class="flex project-area">
+
+  
         <!-- change the links of the images and project title here!-->
         <div class="project-overview">
+
           <h3 class="project-title"> Markdown Links </h3>
-          <div class="img-description">
+
+          <div id= "project-content"class="img-description one">
             <figure id="two">
-              <div id="img2" class="overlay">
-                <div class="button-container">
+              <div id="img2" class="overlay ov-one">
+                <div class="button-container btn-one">
                   <a class="code-button button" href="https://github.com/JeniferCoila/LIM008-fe-md-links" target="_blank"> Código </a>
                 </div>
               </div>
@@ -148,37 +152,40 @@
             <h4 class="project-description">
               Esta librería instalable en tu computador te permitirá obtener los links de los archivos Markdown que
               desees, además de indicarte si
-              son válidos. <br>
-              Herramientas utilizadas : NodeJS, Javascript, Jest.
+              son válidos. <br> 
+              <strong>Herramientas utilizadas:</strong> NodeJS, Javascript, Jest.
             </h4>
           </div>
+
         </div>
+
         <div class="project-overview">
           <h3 class="project-title"> JoinClude </h3>
-          <div class="img-description">
+          <div class="img-description two">
             <figure id="three">
-              <div id="img3" class="overlay">
-                <div class="button-container">
+              <div id="img3" class="overlay ov-two">
+                <div class="button-container btn-two">
                   <a class="code-button button" href="https://github.com/JeniferCoila/LIM008-social-network" target="_blank"> Código
                   </a>
                   <a class="code-button button"> Demo </a>
                 </div>
+
               </div>
               <img class="project-img" src="./img/Joinclude-cap.png" alt="">
               </a>
             </figure>
             <h4 class="project-description">Red social para personas feministas que nace con la necesidad de un espacio
               libre para compartir historias e ideas y disfrutar de una comunidad libre. <br>
-              Herramientas utilizadas : Javascript, HTML5, CSS, Firebase, Jest.
+              <strong>Herramientas utilizadas:</strong>Javascript, HTML5, CSS, Firebase, Jest.
             </h4>
           </div>
         </div>
         <div class="project-overview">
           <h3 class="project-title"> League of Legends Championship </h3>
-          <div class="img-description">
+          <div class="img-description three">
             <figure id="four">
-              <div id="img4" class="overlay">
-                <div class="button-container">
+              <div id="img4" class="overlay ov-three">
+                <div class="button-container btn-three">
                   <a class="code-button" href="https://github.com/JeniferCoila/lim-2018-11-bc-core-am-data-lovers" target="_blank">
                     Código </a>
                   <a class="code-button" href="https://jenifercoila.github.io/lim-2018-11-bc-core-am-data-lovers/src" target="_blank">
@@ -189,43 +196,42 @@
               </a>
             </figure>
             <h4 class="project-description"> Aplicación dirigida a jugadores novatos de League of Legends que muestra los campeones
-               del juego mencionado y sus habilidades, además de estadisticas útiles para poder elegir al campeón perfecto y tener una buena partida.<br>
-              Herramientas utilizadas : Javascript, HTML5, CSS, Jest.
+               del juego y sus habilidades, además de estadisticas útiles para elegir al campeón perfecto y tener una buena partida.<br>
+               <strong>Herramientas utilizadas:</strong> Javascript, HTML5, CSS, Jest.
             </h4>
           </div>
         </div>
 
-      </div>
     </div>
   </section>
 
   <section>
     <div class="container tools">
-      <h1 class="port">Herramientas</h1>
+      <h1 class="port">Mis herramientas</h1>
       <div class="container-tools flex">
         <a class="logo-tools">
-          <img class="img-tools" src="./img/angular.png"> <br> Angular 7
+          <img class="img-tools" src="./img/angular.png"> <br> <p class="skill-name">Angular 7</p>
         </a>
         <a class="logo-tools">
-            <img class="img-tools node" src="./img/node3.png"> <br> Node JS
+            <img class="img-tools node" src="./img/node3.png"> <br> <p class="skill-name">Node JS</p> 
           </a>
           <a class="logo-tools">
-              <img class="img-tools" src="./img/firebase.png"><br>  Firebase
+              <img class="img-tools" src="./img/firebase.png"><br> <p class="skill-name">Firebase</p> 
             </a>
           <a class="logo-tools">
-              <img class="img-tools" src="./img/github.png"><br>  Github
+              <img class="img-tools" src="./img/github.png"><br> <p class="skill-name">Github</p> 
             </a>
           <a class="logo-tools">
-              <img class="img-tools" src="./img/git.png"><br>  Git
+              <img class="img-tools" src="./img/git.png"><br><p class="skill-name">Git</p>  
             </a>
         <a class="logo-tools">
-            <img class="img-tools" src="./img/JS.png"> <br> Javascript ES6
+            <img class="img-tools" src="./img/JS.png"> <br><p class="skill-name">Javascript ES6</p> 
           </a>
           <a class="logo-tools">
-              <img class="img-tools" src="./img/css-3.png"> <br> CSS 3
+              <img class="img-tools" src="./img/css-3.png"> <br><p class="skill-name">CSS 3</p> 
             </a>
           <a class="logo-tools">
-              <img class="img-tools" src="./img/html5.png"> <br> HTML 5
+              <img class="img-tools" src="./img/html5.png"> <br> <p class="skill-name">HTML 5</p>
             </a>
       </div>
     </div>
@@ -234,7 +240,7 @@
   <section class="grey">
     <div class="contact-container">
       <!-- edit this h2 and paragraph text here!-->
-      <h2 class="contact">¡Contactémonos!</h2>
+      <h2 class="contact">¡Contáctame!</h2>
       <div class="logo-container">
         <a class="contact-info flex contact" href="tel:+51931699973">
           <img class="logo-footer" src="./img/smartphone-call (1).png"> +51 931 699 973
@@ -246,9 +252,9 @@
     </div>
   </section>
   <footer>
-    <div class="container">
+    <div class="container footer-section">
       <p class="foot"></p>
-      <div class="flex">
+      <div class="flex footer-container">
         <div class="social-media">
           <a href="https://github.com/JeniferCoila" target="_blank">
             <img class="logo-footer" src="./img/github.png"> 
@@ -259,8 +265,8 @@
           <a href="https://wa.me/51931699973" target="_blank">
             <img class="logo-footer" src="./img/whatsapp.png">
           </a>
-          <p class="copyright flex"> &#9400;	 2019 Jenifer Coila Farfan</p>        
         </div>
+          <p class="copyright"> &#9400;	 2019 Jenifer Coila Farfan</p>        
       </div>
     </div>
   </footer>
