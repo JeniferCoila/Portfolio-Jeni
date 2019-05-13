@@ -136,8 +136,8 @@ $(document).ready(function() {
 
 // figcaption doesn't show up under 960px. Should get better performance on mobile.
 $(document).ready(function() {
-  $(window).resize(function() {
- if ($(window).width() < 960) {
+  $(document).resize(function() {
+ if ($(document).width() < 960) {
     $('#img1, #img2, #img3, #img4').css('display', 'none')
     $( ".btn-one" ).detach().appendTo(".one");
     $( ".btn-two" ).detach().appendTo(".two");
