@@ -82,8 +82,8 @@ $(document).ready(function() {
   });
   $('#one, #two, #three, #four, #five, #six').on({
     mouseleave: function(){
-    $('#img1, #img2, #img3, #img4').css("height", "0px")
-    $('#img1, #img2, #img3, #img4').css("opacity", "0")
+    $('#img1, #img2, #img3, #img4, #img5').css("height", "0px")
+    $('#img1, #img2, #img3, #img4, #img5').css("opacity", "0")
     }
   });
 });
@@ -158,16 +158,19 @@ $(document).ready(function() {
 function checkSize(){
   if ($(".project-area").css("background-color") == "rgb(255, 255, 255)" ){
     console.log('if')
-    $('#img1, #img2, #img3, #img4').css('display', 'none')
+    $('#img1, #img2, #img3, #img4, #img5').css('display', 'none')
     $( ".btn-one" ).detach().appendTo(".one");
     $( ".btn-two" ).detach().appendTo(".two");
     $( ".btn-three" ).detach().appendTo(".three");  
+    $( ".btn-five" ).detach().appendTo(".five");  
+
   } else {
     console.log('else')
     $('#img1, #img2, #img3, #img4').css('display', 'block')
     $( ".btn-one" ).detach().appendTo(".ov-one");
     $( ".btn-two" ).detach().appendTo(".ov-two");
     $( ".btn-three" ).detach().appendTo(".ov-three");
+    $( ".btn-five" ).detach().appendTo(".ov-five");
   }
 }
 
